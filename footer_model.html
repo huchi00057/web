@@ -1,0 +1,109 @@
+<html>
+<title>Fotter 簡易模板 (Rosderma作範例) </title>
+<style>
+@charset "utf-8";
+.flist {cursor:pointer;pointer-events: none;}
+/*footer*/
+.fatfooter{ background:#1c1c1c; position:relative; z-index:2  }
+.fatfooter .mar{ margin:auto; max-width:1200px; padding:40px; font-size:0; padding-bottom:10px}
+.fatfooter .mar .fgrids{ display:inline-block; vertical-align:top; width:20%; padding-right:20px; margin-top:-20px  }
+.fatfooter .mar .fgrids .ftitles{ color:#ffffff; font-size:10px; margin:0 0 10px 0; }
+.fatfooter .mar .fgrids .flist{ margin:0 0 10px 0; }
+.fatfooter .mar .fgrids .flist .nouse{ opacity:0.5;}
+.fatfooter .mar .fgrids .flist .mtitle{ display:block; font-size:8px; color:#ffffff; margin:0 0 8px 0; text-decoration:none; }
+.fatfooter .mar .fgrids .flist .mtitle .lock{ display:inline-block; padding-right:5px;}
+.fatfooter .mar .fgrids .flist .mtxts{ display:block; font-size:8px; color:#000000; margin:0 0 8px 0; text-decoration:none; padding-left:15px; position:relative; }
+.fatfooter .mar .fgrids .flist .mtxts:before{ content:""; display:block; width: 0; height: 0; border-color: transparent transparent transparent #aaa; border-width: 3px 0 3px 5px; border-style: solid; position: absolute; top: 8px; left: 0; }
+.fatfooter .mar .fgrids .flist .mtxts .lock{ position:absolute; top:4px; left:0; color:#aaa;}
+
+.footer{ position:relative; z-index:2;
+background: rgb(0,87,152);
+background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 100%); 
+background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,1) 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005798', endColorstr='#2fa4db',GradientType=1 ); }
+.footer .mar{ margin:auto; max-width:1200px; padding:25px 40px; }
+.footer .mar .tabs{ display:table; width:100%; }
+.footer .mar .tabs .td-a{ display:table-cell; vertical-align: middle; }
+.footer .mar .tabs .td-a .ftxtlist{ display:block; color:#fff; font-size:12px; line-height:1.6; margin:0 0 8px 0; }
+.footer .mar .tabs .td-a .ftxtlist .alink{ color:#000000; text-decoration:none; font-size:12px; line-height:1.6; }
+.footer .mar .tabs .td-a .ftxtlist:last-child{ margin:0; }
+.footer .mar .tabs .td-a .ftxtlist a{ color:#fff; text-decoration:none; padding:0 2px;}
+.footer .mar .tabs .td-b{ display:table-cell; vertical-align: middle; width:240px; text-align:right; }
+.footer .mar .tabs .td-b .qrcode{ display:inline-block; vertical-align:middle; margin:0 0 0 15px; }
+.footer .mar .tabs .td-b .qrtxt{ display:inline-block; vertical-align:middle; color:#fff; font-size:12px; }
+.footer .mar .tabs .td-b .qrtxt span{ font-size:14px; margin-top:5px; display:inline-block; }
+
+/*================================●●●●●●●●●●●●平板●●●●●●●●●●●●================================*/
+@media screen and (min-width:768px) and (max-width:1023px){
+/*footer*/
+.fatfooter .mar .fgrids{ width:33.333%; }
+
+}
+
+/*================================●●●●●●●●●●●●手機●●●●●●●●●●●●================================*/
+@media screen and (max-width:767px){
+/*footer*/
+.fatfooter{ display:none; }
+.footer{ background:#f2f2f2; }
+.footer .mar{ padding:20px 10px; }
+.footer .mar .tabs{ display:block; }
+.footer .mar .tabs .td-a{ display:block; }
+.footer .mar .tabs .td-b{ display:none; }
+.footer .mar .tabs .td-a .ftxtlist{ color:#000000; }
+.footer .mar .tabs .td-a .ftxtlist .alink{ color:#000000; }
+.footer .mar .tabs .td-a .ftxtlist a{ color:#000000;}
+}
+</style>
+
+<body>
+<div class="fatfooter">
+  <div class="mar">
+    
+      <div class="fgrids">
+          <div class="ftitles"></div>
+            <div class="flist">
+            <img src="https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_300,w_300,f_auto,q_auto/5842453/640954_246651.png" border="0"  width="80px" height="80px">
+            </div>
+        </div>
+    
+        <div class="fgrids">
+          <div class="ftitles">好肌原</div>
+            <div class="flist">
+              <a href="" class="mtitle">只要一滴 All in One</a>
+            </div>
+            <div class="flist">
+              <a href="2-1_case_fees.html" class="mtitle">輕鬆保養</a>
+            </div>
+        </div>
+    
+        <div class="fgrids">
+          <div class="ftitles">營業時間</div>
+            <div class="flist">
+              <a href="#" class="mtitle">每周一~每周五</a>  
+            </div>
+            <div class="flist">
+              <a href="#" class="mtitle">上午8點至下午5點</a>  
+            </div>
+        </div>
+    
+        <div class="fgrids">
+          <div class="ftitles">聯絡我們</div>
+            <div class="flist">
+              <a href="#" class="mtitle">05-2719090</a>  
+            </div>
+            <div class="flist">
+              <a href="#" class="mtitle">serve.rosderma@gmail.com</a>  
+            </div>
+            <div class="flist">
+              <a href="#" class="mtitle">LINE ID : wmchou33633</a>  
+            </div>
+        </div>
+
+        <hr size=1>
+        <div style="text-align:center" ><font size="2" color="white"><br>copyright © 2022 洛凱實業社 All Rights Reserved</font></div>
+    </div>
+</div>
+
+</body>
+</html>
