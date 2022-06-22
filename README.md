@@ -1,4 +1,7 @@
-<h1>✏Footer Model 頁尾模板✏<h1>
+✏Footer Model 頁尾模板✏
+====
 How it looks like? Just let me show you👇
-[image text](https://i.imgur.com/n7ifytK.png)
-If you like it, you can just modify some contents by this code named footer_model.html.
+![pototype](https://i.imgur.com/n7ifytK.png)
+If you like it, you can just modify some contents by this code named 
+```diff
+-footer_model.html.
