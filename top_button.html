@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>浮動式至頂鈕</title>
+		<style>
+		    #home {
+				background: url("https://i.imgur.com/KrPElFf.png");
+				position:fixed;
+				z-index:90;
+				right:20px;
+				bottom:10%;
+				display:none;
+				width:64px;
+				height:64px;
+				line-height:50px;
+				border:none;			
+				transition:all 0.5s;
+			}
+			#gotop {
+				background: url("https://i.imgur.com/w133vqD.png");
+				position:fixed;
+				z-index:90;
+				right:20px;
+				bottom:1.2%;
+				display:none;
+				width:64px;
+				height:64px;
+				line-height:50px;
+				border:none;			
+				transition:all 0.5s;
+			}
+			#gotop :hover{
+				background:#0099CC;
+			}
+			#home :hover{
+				background:#0099CC;
+			}
+		</style>	
+	  	<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>	
+		<script type="text/javascript">
+		$(function() {
+			/* 按下GoTop按鈕時的事件 */
+			$('#gotop').click(function(){
+				$('html,body').animate({ scrollTop: 0 }, 'slow');   /* 返回到最頂上 */
+				return false;
+			});
+			
+			/* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+			$(window).scroll(function() {
+				if ( $(this).scrollTop() > 400){
+					$('#gotop').fadeIn();
+					$('#home').fadeIn();
+				} else {
+					$('#gotop').fadeOut();
+					$('#home').fadeOut();
+				}
+			});
+		});
+
+		</script>  		
+    </head>
+	
+    <body>
+		<!-- 範例隨便找的一超長圖片 -->
+	    <img src="http://5b0988e595225.cdn.sohucs.com/images/20180105/9555296bb3774c138389fca4864e4492.jpeg" style="display:block; margin:auto;">
+		<a id="home" href = "https://www.google.com.tw/?hl=zh_TW">
+		</a>
+		<button id="home"></button>
+		<a id="gotop">
+		</a>
+		<button id="gotop"></button>
+    </body>	
+</html>
