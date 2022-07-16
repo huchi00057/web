@@ -33,3 +33,5 @@ And while you pick 🏠home🏠, you will jump to google(anywhere you setted).
 * http://www.w3bai.com/zh-TW/w3css/w3css_slideshow.html
 5. Image Mapping (一張圖片找定點)
 * https://www.image-maps.com/
+6. 顯示滑鼠座標
+* http://www.webpage.idv.tw/maillist/maillist2/skill/08/2.htm
