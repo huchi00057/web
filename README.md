@@ -17,3 +17,19 @@ And while you pick 🏠home🏠, you will jump to google(anywhere you setted).
 ```diff
 -top_buttom.html.
 ```
+
+🔗Resource share 資源共享🔗
+====
+1. 上傳圖片-以防圖片太多跑不動
+* https://www.ifreesite.com/upload/
+* https://upload.cc/#
+2. 不同時間顯示不同CSS樣式
+* https://blog.csdn.net/QTFYING/article/details/46744903
+* https://blog.csdn.net/WeilaPls/article/details/86550889
+3. 免費時鐘
+* https://time.is/zh/widgets
+* https://blog.csdn.net/WeilaPls/article/details/86550889
+4. 幻燈片(首頁)
+* http://www.w3bai.com/zh-TW/w3css/w3css_slideshow.html
+5. Image Mapping (一張圖片找定點)
+* https://www.image-maps.com/
